@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="msme 4th edition.png" alt="Event Logo" class="logo">
+    </div>
+
+    <div class="form-container">
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <h2>Event Contact Form</h2>
+        <form>
+
+            <!-- Event Details (Pre-filled) -->
+            <div class="event-details">
+                <div class="event-name">
+                    <strong>Event Name:</strong> <span>MSME & STARTUP INNOVATION SUMMIT</span>
+                </div>
+                <div class="event-info">
+                    <strong>Date:</strong> <span>22nd May 2025</span><br>
+                    <strong>Location:</strong> <span>Vivanta Bhubaneswar, Odisha</span>
+                </div>
+            </div><br><br>
+
+            <!-- Participant Information -->
+            <div class="form-group">
+                <label>Participant Name</label>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Designation</label>
+                <input type="text" name="Designation" placeholder="Enter designation">
+            </div>
+
+            <div class="form-group">
+                <label>Organization</label>
+                <input type="text" name="Organization" placeholder="Enter organization">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="Email" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" name="Phone Number" placeholder="Enter phone number">
+            </div><br>
+
+            <!-- Question 1 -->
+            <div class="form-group">
+    <label>1. What are your primary objectives for attending this event? (Select all that apply)</label><br>
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="objectives[]" value="Speed networking & business connections"> Speed networking & business connections</label><br>
+        <label><input type="checkbox" name="objectives[]" value="Building relationships with government bodies"> Building relationships with government bodies</label><br>
+        <label><input type="checkbox" name="objectives[]" value="Engaging with ambassadors & trade representatives"> Engaging with ambassadors & trade representatives</label><br>
+        <label><input type="checkbox" name="objectives[]" value="Exploring funding & investment opportunities"> Exploring funding & investment opportunities</label><br>
+        <label><input type="checkbox" name="objectives[]" value="Learning about industry trends & policy updates"> Learning about industry trends & policy updates</label><br>
+        <label><input type="checkbox" name="objectives[]" value="Seeking collaborations & partnerships"> Seeking collaborations & partnerships</label><br>
+        <label><input type="checkbox" name="objectives[]" value="Participating in the awards segment"> Participating in the awards segment</label><br>
+        <label><input type="checkbox" name="objectives[]" value="other"> Other: <input type="text" name="objectives_other" placeholder="Specify"></label><br>
+    </div>
+</div>
+
+            <!-- Question 2 -->
+            <div class="form-group">
+                <label>2. Who would you be most interested in connecting with? (Select all that apply)</label><br>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interested[]" value="Government officials & policymakers"> Government officials & policymakers</label><br>
+                    <label><input type="checkbox" name="interested[]" value="Investors & funding agencies"> Investors & funding agencies</label><br>
+                    <label><input type="checkbox" name="interested[]" value="Industry leaders & mentors"> Industry leaders & mentors</label><br>
+                    <label><input type="checkbox" name="interested[]" value="Trade commissioners & ambassadors"> Trade commissioners & ambassadors</label><br>
+                    <label><input type="checkbox" name="interested[]" value="Potential business partners & clients"> Potential business partners & clients</label><br>
+                    <label><input type="checkbox" name="interested[]" value="Media & PR representatives"> Media & PR representatives</label><br>
+                    <label><input type="checkbox" name="interested[]" value="other"> Other: <input type="text" name="interested_other"placeholder="Specify" style="display: none;"></label><br>
+                </div>
+            </div>
+
+                        <!-- Question 3 -->
+<div class="form-group">
+    <label>3.Which topic would you like to explore at the MSME Innovation Summit?</label><br>
+    <div class="radio-group">
+        <label><input type="radio" name="Topic" value="Global Impact of MSMEs for a Better Future"> Global Impact of MSMEs for a Better Future</label><br>
+        <label><input type="radio" name="Topic" value="Enhancing National Impact: Promoting Indigenous Businesses"> Enhancing National Impact: Promoting Indigenous Businesses</label><br>
+        <label><input type="radio" name="Topic" value="Welcome to Odisha – Land of Gods: Promoting a Conducive Ecosystem for MSME Growth"> Welcome to Odisha – Land of Gods: Promoting a Conducive Ecosystem for MSME Growth</label><br>
+    </div>
+</div>
+
+            
+            <!-- Question 4 -->
+<div class="form-group">
+    <label>4. Are you looking to expand in Odisha?</label><br>
+    <div class="radio-group">
+        <label><input type="radio" name="expand-odisha" value="yes"> Yes</label><br>
+        <label><input type="radio" name="expand-odisha" value="no"> No</label><br>
+        <label><input type="radio" name="expand-odisha" value="considering"> Considering it</label><br>
+    </div>
+</div>
+
+<!-- Conditional Question: Industries of Interest -->
+<div class="form-group" id="industry-interest-group" style="display: none;">
+    <label>What industries are you interested in for expansion?</label>
+    <input type="text" id="industry-interest" name="industry-interest" placeholder="Enter industries">
+</div>
+
+
+            <!-- Question 5 -->
+            <div class="form-group">
+                <label>5. What made you choose this location for participation?</label>
+                <textarea name="location" placeholder="Your response"></textarea><br>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="form-group">
+                <label>6. Are you open to one-on-one meetings during the event?</label><br>
+                <div class="radio-group">
+                    <label><input type="radio" name="meetings" value="yes"> Yes</label><br>
+                    <label><input type="radio" name="meetings" value="no"> No</label><br>
+                    <label><input type="radio" name="meetings" value="Maybe"> Maybe, depending on availability</label><br>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="form-group">
+                <label>7. If you’re looking for collaborations, what type of partnerships are you interested in?</label>
+                <textarea name="collaborations" placeholder="Your response"></textarea><br>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="form-group">
+                <label>8. Do you have any specific topics or issues you’d like addressed during the event?</label>
+                <textarea name="topic" placeholder="Your response"></textarea><br>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="form-group">
+                <label>9. Would you like to be considered for an award?</label><br>
+                <div class="radio-group">
+                    <label><input type="radio" name="award" value="yes"> Yes, please send me more details</label><br>
+                    <label><input type="radio" name="award" value="no"> No</label><br>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="form-group">
+                <label>10. Any other expectations or comments?</label>
+                <textarea name="comments" placeholder="Your response"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
+

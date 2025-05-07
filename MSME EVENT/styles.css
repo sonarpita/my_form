@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff7f50, #ffffff); 
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    background-color: #ebe7e7; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Form Container */
+.form-container {
+    background: #b1ada2(212, 135, 135, 0.9);  /* Your original color */
+    padding: 30px;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px); 
+    color: black;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff4500; 
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+/* Checkbox Alignment: Text on Left, Checkbox on Right */
+.option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-group label {
+    display: flex;
+    justify-content: space-between; /* Aligns text left and checkbox right */
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Light background for better visibility */
+    border-radius: 5px;
+}
+
+/* Ensures checkboxes align correctly */
+input[type="checkbox"], 
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Input Fields & Select Box */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px; 
+    border: none;
+    font-size: 16px;
+    color: black;
+    background-color: #F4F4F4; 
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Submit Button */
+button {
+    background: #ff4500; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #e63900; 
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .form-container {
+        width: 90%;
+    }
+}
